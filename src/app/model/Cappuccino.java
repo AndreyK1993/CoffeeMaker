@@ -1,6 +1,6 @@
-package app;
+package app.model;
 
-class Cappuccino implements CoffeeMachine {
+public class Cappuccino implements CoffeeMachine {
 
     @Override
     public void make() {

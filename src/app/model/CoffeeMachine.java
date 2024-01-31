@@ -1,6 +1,6 @@
-package app;
+package app.model;
 
 // Интерфейс, позволяющий реализовать слабую связь.
-interface CoffeeMachine {
+public interface CoffeeMachine {
     void make();
 }
