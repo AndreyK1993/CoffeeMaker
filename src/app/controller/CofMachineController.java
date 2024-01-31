@@ -5,16 +5,16 @@ import app.model.CoffeeMachine;
 import app.model.Espresso;
 import app.model.Cappuccino;
 import app.model.Latte;
-import app.view.AppView;
+import app.view.CofMachineView;
 
-public class AppController {
+public class CofMachineController {
 
     Cup cup = new Cup();
 
     public void runApp() {
         int option;
         do {
-            option = AppView.getMenu();
+            option = CofMachineView.getMenu();
             switch (option) {
                 case 1 -> preparingDrink(new Espresso());
                 case 2 -> preparingDrink(new Cappuccino());

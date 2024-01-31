@@ -2,7 +2,7 @@ package app.view;
 
 import java.util.Scanner;
 
-public class AppView {
+public class CofMachineView {
 
     private static Scanner scanner = new Scanner(System.in);
 
