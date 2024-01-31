@@ -5,7 +5,6 @@ import app.model.CoffeeMachine;
 import app.model.Espresso;
 import app.model.Cappuccino;
 import app.model.Latte;
-
 import app.view.AppView;
 
 public class AppController {
@@ -21,14 +20,13 @@ public class AppController {
                 case 2 -> preparingDrink(new Cappuccino());
                 case 3 -> preparingDrink(new Latte());
                 case 0 -> System.out.println("Turn off coffee machine.");
-                default -> System.out.println("Try again.");
+                default -> System.out.println("Invalid choice. Please try again.");
             }
         } while (option != 0);
         System.exit(0);
     }
 
-
-    private void preparingDrink (CoffeeMachine coffeeMachine) {
+    private void preparingDrink(CoffeeMachine coffeeMachine) {
         cup.setCoffeeMachine(coffeeMachine);
         cup.startPreparing();
     }

@@ -15,8 +15,15 @@ public class AppView {
                 0 - Turn off coffee machine.
                 """);
 
-        int menu = scanner.nextInt();
-        scanner.nextLine();
+        int menu;
+        do {
+            System.out.print("Choose a drink: ");
+            menu = scanner.nextInt();
+            scanner.nextLine();
+            if (menu < 0 || menu > 3) {
+                System.out.println("Invalid choice. Please try again.");
+            }
+        } while (menu < 0 || menu > 3);
         return menu;
     }
 }
